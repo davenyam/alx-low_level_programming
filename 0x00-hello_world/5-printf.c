@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main
+ * main - print the exact sentence
  * followed by new line
  * Return: 0 if no errors, return non zero if errors
  */
