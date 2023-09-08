@@ -13,15 +13,15 @@ int main(void)
 	srand(time(NULL));
 	if (n > 0)
 	{
-	printf("98 is positive\n", n);
+	printf("%d is positive\n", n);
 	}
 	else if (n == 0)
 	{
-	printf("0 is zero\n", n);
+	printf("%d is zero\n", n);
 	}
 	else
 	{
-	printf("-98 is negative\n", n);
+	printf("%d is negative\n", n);
 	}
 	return (0);
 }
