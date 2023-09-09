@@ -1,33 +1,27 @@
-#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-/* more headers goes there */
+#include <stdio.h>
 
 /**
  * main - Entry point
- * Description - if/else statement
- * Return: Alway (0) - Success
+ * Decription - greater than 5, 0, or less than 6
+ * Return: (0)
  */
 int main(void)
 {
 	int n;
+	int lastDigit;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	int lastDigit = n % 10;
 
-	printf("Last digit of %d is ", n);
+	lastDigit = n % 10;
+	printf("Last digit of %i is %i and is ", n, lastDigit);
 	if (lastDigit > 5)
-	{
-		printf("and is greater than 5\n");
-	}
+		printf("greater than 5\n");
 	else if (lastDigit == 0)
-	{
-		printf("and is 0\n");
-	}
+		printf("0\n");
 	else
-	{
-		printf("and is less than 6 and not 0\n");
-	}
+		printf("less than 6 and not 0\n");
 	return (0);
 }
