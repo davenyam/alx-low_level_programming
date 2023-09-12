@@ -22,12 +22,12 @@ void jack_bauer(void)
 			d = 0;
 			c++;
 		}
-		else if (c > 5)
+		if (c > 5)
 		{
 			c = 0;
 			b++;
 		}
-		else if (b > 9)
+		if (b > 9)
 		{
 			b = 0;
 			a++;
