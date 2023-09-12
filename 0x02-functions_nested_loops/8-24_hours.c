@@ -15,23 +15,23 @@ void jack_bauer(void)
 		_putchar(c + '0');
 		_putchar(d + '0');
 		_putchar('\n');
-
-	d++;
-	if (d > 9)
-	{
-		d = 0;
-		c++;
-	}
-	else if (c > 5)
-	{
-		c = 0;
-		b++;
-	}
-	else if (b > 9)
-	{
-		b = 0;
-		a++;
-	}
-	sumofMinutes++;
+		
+		d++;
+		if (d > 9)
+		{
+			d = 0;
+			c++;
+		}
+		else if (c > 5)
+		{
+			c = 0;
+			b++;
+		}
+		else if (b > 9)
+		{
+			b = 0;
+			a++;
+		}
+		sumofMinutes++;
 	}
 }
