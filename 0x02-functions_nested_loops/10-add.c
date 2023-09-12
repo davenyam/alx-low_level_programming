@@ -1,6 +1,6 @@
 #include "main.h"
 
-/*
+/**
  * add - Adds two integers
  * @a: int type
  * @b: int type
