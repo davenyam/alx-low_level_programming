@@ -3,7 +3,6 @@
 /**
  * print_last_digit - calculates the last digit of n
  * @n: integer type number
- * @lastDigit: The last number of @n
  * Return: Always returns @lastDigit
  */
 int print_last_digit(int n)
@@ -19,13 +18,13 @@ int print_last_digit(int n)
 	else if (n > 0)
 	{
 		lastDigit = n % 10;
-		_putchar(lastDigit);
+		_putchar(lastDigit + '0');
 		return (lastDigit);
 	}
 	else
 	{
 		lastDigit = 0;
-		_putchar(lastDigit);
+		_putchar(lastDigit + '0'7-print_last_digit.c);
 		return (lastDigit);
 	}
 }
