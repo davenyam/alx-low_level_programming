@@ -7,7 +7,7 @@ void jack_bauer(void)
 	int sumofMinutes;
 	int a = 0, b = 0, c = 0, d = 0;
 
-	while (sumofMinutes = 1440)
+	while (sumofMinutes <= 1440)
 	{
 		_putchar(a + '0');
 		_putchar(b + '0');
