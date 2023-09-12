@@ -24,7 +24,7 @@ int print_last_digit(int n)
 	else
 	{
 		lastDigit = 0;
-		_putchar(lastDigit + '0'7-print_last_digit.c);
+		_putchar(lastDigit + '0');
 		return (lastDigit);
 	}
 }
