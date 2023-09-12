@@ -2,6 +2,7 @@
 
 /**
  * _abs - prints abs values
+ * @n: stores an absolute
  * return: absolute values
  */
 int _abs(int n)
