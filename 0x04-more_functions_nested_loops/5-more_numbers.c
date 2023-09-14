@@ -3,7 +3,7 @@
 /**
  * more_numbers - Prints numbers from 0 to 14, ten times
  * Description: This function prints the numbers from 0 to 14, ten times,
- * with each set of numbers separated by a newline character.
+ * Return: Always void (Success)
  */
 void more_numbers(void)
 {
