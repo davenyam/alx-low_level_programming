@@ -6,37 +6,15 @@
  */
 void print_number(int n)
 {
-	if (n == 0)
-	{
-		_putchar('0');
-		return;
-	}
-	
+	unsigned int num = n;
 	if (n < 0)
 	{
 		_putchar('-');
-		n = -n;
-	}
-	
-	int divisor = 1;
-	int digit;
-	int leading_zeros = 1;
-	
-	while (n / divisor >= 10)
-	{
-		divisor *= 10;
-	}
-	
-	while (divisor > 0)
-	{
-		digit = n / divisor;
-		n %= divisor;
-		divisor /= 10;
-		
-		if (digit != 0 || !leading_zeros)
+		num = -num;
+		if (num > 9)
 		{
-			_putchar(digit + '0');
-			leading_zeros = 0;
+			print_number(num / 10);
 		}
+		_putchar(num % 10 + '0');
 	}
 }
