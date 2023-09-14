@@ -3,7 +3,7 @@
 /**
  * print_diagonal - Prints a diagonal line of backslashes
  * @n: The number of backslashes to print
- * Description: This function prints a diagonal line consisting of 'n' backslashes
+ * Description: Function prints diagonal line consisting of 'n' backslashes
  * followed by a newline character ('\n').
  */
 void print_diagonal(int n)
