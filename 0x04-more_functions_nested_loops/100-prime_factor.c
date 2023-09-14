@@ -6,47 +6,79 @@
  *
  * Return: The largest prime factor of the given number
  */
-long largest_prime_factor(long n)
-{
-	long max_prime = -1;
-	
-	while (n % 2 == 0)
-	{
-		max_prime = 2;
-		n /= 2;
-	}
-	for (long i = 3; i * i <= n; i += 2)
-	{
-		while (n % i == 0)
-		{
-			max_prime = i;
-			n /= i;
-		}
-	}
-	
-	if (n > 1)
-	{
-		max_prime = n;
-	}
-	
-	return max_prime;
-}
-
-/**
- * main - Entry point of the program
- *
- * Description:
- * This program finds and prints the largest prime factor of a given number,
- * 612852475143, followed by a newline character.
- *
- * Return: Always 0 (Success)
- */
 int main(void)
 {
-	long number = 612852475143;
-	long result = largest_prime_factor(number);
-	
-	printf("%ld\n", result);
-	
-	return 0;
+	long int number;
+
+	number = 612852475143;
+
+	if (isPrime(number) == 1)
+	{
+		printf("%ld\n", number);
+	}
+	else
+	{
+		printf("%ld\n", biggestFactor(number));
+	}
+	return (0);
+}
+/**
+ * isPrime - analise if a number is prime or not
+ * @n: number to check
+ * Return: true if it is prime false if not
+ */
+int isPrime(long int n)
+{
+	int i;
+
+	if (n <= 1)
+	{
+		return (0);
+	}
+	else if (n == 2)
+	{
+		return (1);
+	}
+	else
+	{
+		for (i = 2; i < n; i++)
+		{
+			if (n % i == 0)
+			{
+				return (0);
+			}
+		}
+	return (1);
+	}
+}
+/**
+ * biggestFactor - returns the biggest prime factor of a number
+ * @a: number to check
+ * Return: biggest factor
+ */
+long int biggestFactor(long int a)
+{
+	long int i, factor;
+
+	factor = a;
+	for (i = 2; i <= factor; i++)
+	{
+		if (isPrime(factor) == 1)
+		{
+			break;
+		}
+		else
+		{
+			if ((factor % i == 0) && (isPrime(i) == 1))
+			{
+				factor = factor / i;
+				continue;
+			}
+			else
+			{
+				factor = factor;
+			}
+		}
+	}
+	return (factor);
 }
