@@ -1,0 +1,27 @@
+#!/bin/bash
+
+# Check if a commit message is provided as the first argument
+if [ $# -eq 0 ]; then
+  echo "Please provide a commit message."
+  exit 1
+fi
+
+# Check if file(s) to be added are provided as arguments
+if [ $# -eq 1 ]; then
+  echo "Please specify the file(s) to be added."
+  exit 1
+fi
+
+# Shift the first argument (commit message) out of the way
+commit_message="$1"
+shift
+
+# Add the specified file(s) to the staging area
+git add "$@"
+
+# Commit changes with the provided commit message
+git commit -m "$commit_message"
+
+# Push changes to the default remote repository (e.g., origin) and the current branch
+git push
+
