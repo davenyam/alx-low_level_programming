@@ -15,9 +15,11 @@ void print_diagonal(int n)
 	else
 	{
 		int spaces = 0;
+		
 		while (spaces < n)
 		{
 			int i = 0;
+			
 			while (i < spaces)
 			{
 				_putchar(' ');
