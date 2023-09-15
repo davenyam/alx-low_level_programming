@@ -1,16 +1,8 @@
-#include "main.h"
-/**
- * main - main
- * Return: 0
- */
+#ifndef MAIN_H
+#define MAIN_H
 
-int main(void)
-{
-	int i;
-	
-	i = 0;
-	
-	positive_or_negative(i);
-	
-	return (0);
-}
+#include <stdio.h>
+
+void positive_or_negative(int i);
+
+#endif /* MAIN_H */
