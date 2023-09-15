@@ -14,7 +14,7 @@ void print_triangle(int size)
 	}
 	else
 	{
-		int row, column, spaces, hashtag;
+		int row, column, spaces, hashtags;
 
 		for (row = 1; row <= size; row++)
 		{
