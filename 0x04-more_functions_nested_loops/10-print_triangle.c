@@ -14,11 +14,15 @@ void print_triangle(int size)
 	}
 	else
 	{
-		int row, column;
-		
+		int row, column, spaces, hashtag;
+
 		for (row = 1; row <= size; row++)
 		{
-			for (column = 1; column <= row; column++)
+			for (spaces = size - row; spaces >= 1; spaces--)
+			{
+				_putchar(' ');
+			}
+			for (hashtags = 1; hashtags <= row; hashtags++)
 			{
 				_putchar('#');
 			}
