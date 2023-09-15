@@ -8,14 +8,14 @@
  */
 void print_triangle(int size)
 {
+	int row, spaces, hashtags;
+	
 	if (size <= 0)
 	{
 		_putchar('\n');
 	}
 	else
 	{
-		int row, spaces, hashtags;
-
 		for (row = 1; row <= size; row++)
 		{
 			for (spaces = size - row; spaces >= 1; spaces--)
