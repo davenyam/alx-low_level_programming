@@ -3,6 +3,7 @@
 /**
  * prints_half - printing half a string
  * @str: that's the string
+ * Description: prints half a string
  * Return: void
  */
 void puts_half(char *str)
@@ -19,7 +20,7 @@ void puts_half(char *str)
 	length  += 1;
 	start += length / 2;
 
-	while(*start)
+	while (*start)
 	{
 		_putchar(*(start));
 		start++;
