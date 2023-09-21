@@ -2,18 +2,14 @@
 #include <stdio.h>
 
 /**
- * print_line - prints a s bytes of a buffer
- * @c: buffer to print
- * @s: bytes of buffer to print
- * @l: line of buffer to print
+ * print_line - Prints a line of hexadecimal and ASCII characters.
+ * @c: The character array containing the data to print.
+ * @s: The number of characters to print.
+ * @l: The line number.
  *
- * Return: void
- *
- * print_buffer - prints a buffer
- * @b: buffer to print
- * @size: size of buffer
- *
- * Return: void
+ * Description: This function prints a line of hexadecimal values followed by
+ * their corresponding ASCII characters. Non-printable characters are
+ * represented as dots.
  */
 
 void print_line(char *c, int s, int l)
@@ -38,6 +34,14 @@ void print_line(char *c, int s, int l)
 	}
 }
 
+/**
+ * print_buffer - Prints a buffer of data in hexadecimal and ASCII format.
+ * @b: The buffer of data to print.
+ * @size: The size of the buffer.
+ *
+ * Description: This function prints the contents of a buffer in a format that
+ * displays hexadecimal values and their corresponding ASCII characters.
+ */
 void print_buffer(char *b, int size)
 {
 	int i;
