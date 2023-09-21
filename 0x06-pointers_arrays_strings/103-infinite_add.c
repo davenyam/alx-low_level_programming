@@ -7,11 +7,11 @@
  * @r: The buffer to store the result
  * @size_r: The size of the buffer
  *
- * Description: This function adds two numbers represented as strings and stores
+ * Description: function adds two numbers represented as strings and stores
  * the result in the provided buffer. The result is truncated if it exceeds the
  * buffer size.
  *
- * Return: If the result fits within the buffer, returns a pointer to the buffer
+ * Return: If result fits within the buffer, returns a pointer to the buffer
  * containing the result. If the result doesn't fit or if there's an error,
  * returns 0.
  */
