@@ -4,32 +4,31 @@
  * is_prime_number - checks if an integer is prime
  *
  * @n: the integer to be checked
+ *
  * Return: 1 if n is prime, 0 otherwise
  */
 int is_prime_number(int n)
 {
+	int start = n / 2;
+
 	if (n <= 1)
-	{
-		return 0;
-	}
-	
-	if (n <= 3)
-	{
-		return 1;
-	}
+		return (0);
+	return (is_prime(n, start));
+}
 
-	if (n % 2 == 0 || n % 3 == 0)
-	{
-		return 0;
-	}
-
-	for (int i = 5; i * i <= n; i += 6)
-	{
-		if (n % i == 0 || n % (i + 2) == 0)
-		{
-			return 0;
-		}
-	}
-
-	return 1;
+/**
+ * is_prime - checks if an integer is prime recursively
+ *
+ * @n: the integer to be checked
+ * @start: the divisor to start checking from
+ *
+ * Return: 1 if n is prime, 0 otherwise
+ */
+int is_prime(int n, int start)
+{
+	if (start <= 1)
+		return (1);
+	else if (n % start == 0)
+		return (0);
+	return (is_prime(n, start - 1));
 }
