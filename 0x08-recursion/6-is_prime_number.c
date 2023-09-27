@@ -4,7 +4,7 @@
  * is_prime_number - checks if an integer is prime
  *
  * @n: the integer to be checked
- *
+ * @start: the divisor to start checking from
  * Return: 1 if n is prime, 0 otherwise
  */
 int is_prime(int n, int start);
