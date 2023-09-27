@@ -8,7 +8,7 @@
  *
  * Return: square root if found, -1 if not found
  */
-int check_int(int square, int x);
+int isInt(int square, int x);
 
 /**
  * _sqrt_recursion - returns the natural square root of n
@@ -26,7 +26,7 @@ int _sqrt_recursion(int n)
 	else if (n == 1)
 		return (1);
 	else
-		return (check_int(n, start));
+		return (isInt(n, start));
 }
 
 /**
@@ -37,14 +37,14 @@ int _sqrt_recursion(int n)
  *
  * Return: square root if found, -1 if not found
  */
-int check_int(int square, int x)
+int isInt(int square, int x)
 {
 	if (x * x == square)
 		return (x);
 	else if (x > square / x)
-		return (check_int(square, x - 1));
+		return (isInt(square, x - 1));
 	else if (x < square / x)
-		return (check_int(square, x + 1));
+		return (isInt(square, x + 1));
 	else
 		return (-1);
 }
