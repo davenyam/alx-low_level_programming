@@ -2,10 +2,10 @@
 
 /**
  * int _strlen_recursion - returns the string lngth
- * 
+ *
  * @s - string value
- * 
-*/
+ *
+ */
 int _strlen_recursion(char *s)
 {
 	if (*s != '\0')
