@@ -18,7 +18,7 @@ int is_prime_number(int n)
 }
 
 /**
- * is_prime - checks if an integer is prime recursively
+ * isPrime - checks if an integer is prime recursively
  *
  * @n: the integer to be checked
  * @start: the divisor to start checking from

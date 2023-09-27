@@ -30,7 +30,7 @@ int _sqrt_recursion(int n)
 }
 
 /**
- * check_int - checks integer as a candidate for a square root
+ * isInt - checks integer as a candidate for a square root
  *
  * @square: square integer
  * @x: integer
