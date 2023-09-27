@@ -2,7 +2,11 @@
 
 /**
  * _sqrt_recursion - returns the natural square root of n
+ * check_int - checks integer as candidate for square root
+ * @square: square integer
  * @n: integer
+ * @x: integer
+ * Return: 1
  * Return: square root
  */
 int check_int(int square, int x);
@@ -19,13 +23,6 @@ int _sqrt_recursion(int n)
 	else
 		return (check_int(n, start));
 }
-
-/**
- * check_int - checks integer as candidate for square root
- * @square: square integer
- * @x: integer
- * Return: 1
- */
 
 int check_int(int square, int x)
 {
