@@ -6,8 +6,7 @@
  * @square: square integer
  * @n: integer
  * @x: integer
- * Return: 1
- * Return: square root
+ * Return: square root and 1
  */
 int check_int(int square, int x);
 int _sqrt_recursion(int n)
