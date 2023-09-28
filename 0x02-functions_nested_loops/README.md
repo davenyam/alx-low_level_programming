@@ -21,8 +21,10 @@ This repository contains a collection of C programs and scripts that perform var
 ### File Descriptions:
 
 ## **0-putchar.c**:
+**Description**: This C program is designed to print the string "_putchar" followed by a new line and return 0. It accomplishes this task simply and efficiently, adhering to the provided specifications. The program contains a single printf statement to print "_putchar\n," followed by a return 0; statement to ensure the desired output is displayed, and the program returns a success status of 0 as required.
+
+
+## **1-alphabet.c**:
 **Prototype**: void print_alphabet(void)
 
-**Description**: This C program is designed to print the string "_putchar" followed by a new line and return 0. It achieves this task efficiently and simply, adhering to the provided specifications. The program contains a single printf statement to print "_putchar\n," and it concludes with a return 0; statement, ensuring that the desired output is displayed, and the program returns a success status of 0 as required.
-   
-
+**Description**: This C program defines a function named print_alphabet with the specified prototype, which efficiently prints the lowercase alphabet followed by a new line using only two calls to _putchar. The function initializes a character variable with 'a' and then enters a loop to sequentially print each lowercase letter from 'a' to 'z' using _putchar. This elegant solution adheres to the constraints while achieving the desired output format of the entire lowercase alphabet followed by a newline character, making it a concise and effective tool for alphabet printing in C programming.
