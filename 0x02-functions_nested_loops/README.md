@@ -1,6 +1,6 @@
 ## 0x02. C - Functions, nested loops
 
-This repository contains a collection of C programs and scripts that perform various tasks related to C programming. Each script and program is designed to fulfill a specific purpose and provides a description of its functionality.
+This repository contains a collection of C programs that perform various tasks related to C programming. Each script and program is designed to fulfill a specific purpose and provides a description of its functionality.
 
 ## Table of Contents
 
