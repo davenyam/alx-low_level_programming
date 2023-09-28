@@ -1,4 +1,4 @@
-## 0x00. C - Hello, World
+## 0x01. C - Variables, if, else, while
 
 This repository contains a collection of C programs and scripts that perform various tasks related to C programming. Each script and program is designed to fulfill a specific purpose and provides a description of its functionality.
 
