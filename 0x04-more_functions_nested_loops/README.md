@@ -17,10 +17,6 @@ This repository contains a collection of C programs that perform various tasks r
 9. [10-print_triangle.c](#10-print_triangle.c)
 9. [100-prime_factor.c](#100-prime_factor.c)
 9. [101-print_number.c](#101-print_number.c)
-9. [101-natural.c](#101-natural.c)
-9. [102-fibonacci.c](#102-fibonacci.c)
-9. [103-fibonacci.c](#103-fibonacci.c)
-9. [104-fibonacci.c](#104-fibonacci.c)
 ---
 ### File Descriptions:
 
