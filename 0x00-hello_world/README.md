@@ -18,8 +18,7 @@ This repository contains a collection of C programs and scripts that perform var
 
 **0-preprocessor**:
    - **Description**: This script has been designed to automate the preprocessing of C programming files. It operates by using the C preprocessor (cpp) to process a C file, the name of which is stored in the $CFILE environment variable. The resulting preprocessed content is then saved into a file named 'c'. This script provides a convenient and customizable solution for streamlining the preprocessing step in C programming projects, allowing users to specify the target C file by modifying the $CFILE environment variable.
----
-
+   
 **1-compiler**:
    - **Description**: This script streamlines the compilation of a C source file without the linking phase. It relies on the environment variable $CFILE to specify the input C source file. Using the GNU Compiler Collection (gcc) with the -c flag to indicate compilation only, the script generates an object file in the same directory as the original C source file. This object file shares the name of the C source file but bears the .o extension (e.g., 'main.c' results in 'main.o'). The script also performs error handling, notifying the user of successful compilation along with the object file's name or reporting any compilation failures. It offers a straightforward and efficient solution for compiling C source files when linking is unnecessary, enhancing workflow efficiency in C programming tasks. Users can customize the target C source file by adjusting the $CFILE environment variable before executing the script.
 
