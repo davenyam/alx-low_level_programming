@@ -16,11 +16,13 @@ This repository contains a collection of C programs and scripts that perform var
 ---
 ### File Descriptions:
 
-1. **0-preprocessor**:
+**0-preprocessor**:
    - **Description**: This script has been designed to automate the preprocessing of C programming files. It operates by using the C preprocessor (cpp) to process a C file, the name of which is stored in the $CFILE environment variable. The resulting preprocessed content is then saved into a file named 'c'. This script provides a convenient and customizable solution for streamlining the preprocessing step in C programming projects, allowing users to specify the target C file by modifying the $CFILE environment variable.
+---
 
-2. **1-compiler**:
+**1-compiler**:
    - **Description**: This script streamlines the compilation of a C source file without the linking phase. It relies on the environment variable $CFILE to specify the input C source file. Using the GNU Compiler Collection (gcc) with the -c flag to indicate compilation only, the script generates an object file in the same directory as the original C source file. This object file shares the name of the C source file but bears the .o extension (e.g., 'main.c' results in 'main.o'). The script also performs error handling, notifying the user of successful compilation along with the object file's name or reporting any compilation failures. It offers a straightforward and efficient solution for compiling C source files when linking is unnecessary, enhancing workflow efficiency in C programming tasks. Users can customize the target C source file by adjusting the $CFILE environment variable before executing the script.
+
 
 3. **2-assembler**:
    - **Description**: This script automates the process of generating the assembly code from a C source file and saving it into an output file. It relies on the $CFILE environment variable to specify the input C source file. Using a C compiler, such as GCC, the script compiles the C source code into assembly code, and then it saves the resulting assembly code into an output file named after the original C source file but with the extension .s, ensuring a direct correlation between the input and output files. For example, if the C source file is named 'main.c,' the script will produce an assembly file named 'main.s.' This script offers a convenient way to convert C code to assembly code, aiding in debugging, optimization, or other low-level programming tasks, and provides flexibility by allowing users to specify the target C source file through the $CFILE environment variable.
