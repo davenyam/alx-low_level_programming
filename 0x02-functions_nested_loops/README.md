@@ -22,6 +22,7 @@ This repository contains a collection of C programs and scripts that perform var
 
 ## **0-putchar.c**:
 **Prototype**: void print_alphabet(void)
+
 **Description**: This C program is designed to print the string "_putchar" followed by a new line and return 0. It achieves this task efficiently and simply, adhering to the provided specifications. The program contains a single printf statement to print "_putchar\n," and it concludes with a return 0; statement, ensuring that the desired output is displayed, and the program returns a success status of 0 as required.
    
 
