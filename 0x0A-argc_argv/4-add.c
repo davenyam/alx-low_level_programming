@@ -1,6 +1,30 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include "main.h"
 #include <stdbool.h>
+
+/**
+ * _atoi - converts a string to an integer
+ *
+ * @s: string input parameter
+ *
+ * Return: converted integer from string
+ */
+
+int _atoi(char *s)
+{
+	unsigned int num = 0;
+	int sign = 1;
+
+	do {
+		if (*s == '-')
+			sign *= -1;
+		else if (*s >= '0' && *s <= '9')
+			num = (num * 10) + (*s - '0');
+		else if (num > 0)
+			break;
+	} while (*s++);
+
+	return (num * sign);
+}
 
 /**
  * is_positive_number - Checks if a string represents a positive number.
@@ -34,8 +58,8 @@ int main(int argc, char *argv[])
 
 	if (argc == 1)
 	{
-		putchar('0');
-		putchar('\n');
+		_putchar('0');
+		_putchar('\n');
 	}
 	else
 	{
@@ -46,13 +70,13 @@ int main(int argc, char *argv[])
 				char *error_message = "Error\n";
 				while (*error_message)
 				{
-					putchar(*error_message);
+					_putchar(*error_message);
 					error_message++;
 				}
 				return 1;
 			}
 
-			result += atoi(argv[i]);
+			result += _atoi(argv[i]);
 		}
 
 		divisor = 1;
@@ -64,11 +88,11 @@ int main(int argc, char *argv[])
 		while (divisor > 0)
 		{
 			int digit = (result / divisor) % 10;
-			putchar('0' + digit);
+			_putchar('0' + digit);
 			divisor /= 10;
 		}
 
-		putchar('\n');
+		_putchar('\n');
 	}
 
 	return (0);
