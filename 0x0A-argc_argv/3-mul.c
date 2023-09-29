@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - Multiplies two numbers and prints the result.
@@ -13,29 +15,29 @@ int main(int argc, char *argv[])
 
 	if (argc != 3)
 	{
-		_putchar('E');
-		_putchar('r');
-		_putchar('r');
-		_putchar('o');
-		_putchar('r');
-		_putchar('\n');
+		putchar('E');
+		putchar('r');
+		putchar('r');
+		putchar('o');
+		putchar('r');
+		putchar('\n');
 		return (1);
 	}
 
-	num1 = (argv[1]);
-	num2 = (argv[2]);
+	num1 = atoi(argv[1]);
+	num2 = atoi(argv[2]);
 	result = num1 * num2;
 
 	/* Handle negative result */
 	if (result < 0)
 	{
-		_putchar('-');
+		putchar('-');
 		result = -result;
 	}
 
 	if (result == 0)
 	{
-		_putchar('0');
+		putchar('0');
 	}
 	else
 	{
@@ -49,12 +51,12 @@ int main(int argc, char *argv[])
 		while (divisor > 0)
 		{
 			int digit = (result / divisor) % 10;
-			_putchar('0' + digit);
+			putchar('0' + digit);
 			divisor /= 10;
 		}
 	}
 
-	_putchar('\n');
+	putchar('\n');
 
 	return (0);
 }
