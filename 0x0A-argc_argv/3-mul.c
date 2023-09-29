@@ -34,8 +34,6 @@ int _atoi(char *s)
  */
 int main(int argc, char *argv[])
 {
-	int num1, num2, result;
-
 	if (argc != 3)
 	{
 		_putchar('E');
@@ -46,10 +44,9 @@ int main(int argc, char *argv[])
 		_putchar('\n');
 		return (1);
 	}
-	num1 = _atoi(argv[1]);
-	num2 = _atoi(argv[2]);
-	result = num1 * num2;
+	int num1 = _atoi(argv[1]), num2 = _atoi(argv[2]), result;
 
+	result = num1 * num2;
 	if (result < 0)
 	{
 		_putchar('-');
