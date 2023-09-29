@@ -1,4 +1,4 @@
-## 0x04. C - More functions, more nested loops
+## 0x09-static_libraries
 
 This repository contains a collection of C programs that perform various tasks related to C programming. Each script and program is designed to fulfill a specific purpose and provides a description of its functionality.
 
