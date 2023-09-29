@@ -46,12 +46,10 @@ int main(int argc, char *argv[])
 		_putchar('\n');
 		return (1);
 	}
-
 	num1 = _atoi(argv[1]);
 	num2 = _atoi(argv[2]);
 	result = num1 * num2;
 
-	/* Handle negative result */
 	if (result < 0)
 	{
 		_putchar('-');
@@ -64,14 +62,12 @@ int main(int argc, char *argv[])
 	}
 	else
 	{
-		/* Calculate and print digits one by one */
 		int divisor = 1;
 
 		while (divisor <= result / 10)
 		{
 			divisor *= 10;
 		}
-
 		while (divisor > 0)
 		{
 			int digit = (result / divisor) % 10;
@@ -80,8 +76,6 @@ int main(int argc, char *argv[])
 			divisor /= 10;
 		}
 	}
-
 	_putchar('\n');
-
 	return (0);
 }
