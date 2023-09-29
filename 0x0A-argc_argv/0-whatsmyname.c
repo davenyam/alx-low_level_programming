@@ -2,8 +2,7 @@
 
 /**
  * main - entry point to the program
- * @i: program name index
- * _putchar - prints char
+ * 
  * Return: Always 0 - Success
  */
 int main(int argc, char* argv[])
