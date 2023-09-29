@@ -44,6 +44,7 @@ int main(int argc, char *argv[])
 		_putchar('\n');
 		return (1);
 	}
+	
 	int num1, num2, result;
 
 	num1 = _atoi(argv[1]);
@@ -55,6 +56,7 @@ int main(int argc, char *argv[])
 		_putchar('-');
 		result = -result;
 	}
+
 	if (result == 0)
 	{
 		_putchar('0');
@@ -67,6 +69,7 @@ int main(int argc, char *argv[])
 		{
 			divisor *= 10;
 		}
+
 		while (divisor > 0)
 		{
 			int digit = (result / divisor) % 10;
