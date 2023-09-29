@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * _atoi - converts a string to an integer
@@ -36,11 +35,16 @@ int _atoi(char *s)
  */
 int main(int argc, char *argv[])
 {
-	int result, num1, num2;
+	int num1, num2, result;
 
-	if (argc < 3 || argc > 3)
+	if (argc != 3)
 	{
-		printf("Error\n");
+		_putchar('E');
+		_putchar('r');
+		_putchar('r');
+		_putchar('o');
+		_putchar('r');
+		_putchar('\n');
 		return (1);
 	}
 
@@ -48,7 +52,35 @@ int main(int argc, char *argv[])
 	num2 = _atoi(argv[2]);
 	result = num1 * num2;
 
-	printf("%d\n", result);
+	/* Handle negative result */
+	if (result < 0)
+	{
+		_putchar('-');
+		result = -result;
+	}
+
+	if (result == 0)
+	{
+		_putchar('0');
+	}
+	else
+	{
+		/* Calculate and print digits one by one */
+		int divisor = 1;
+		while (divisor <= result / 10)
+		{
+			divisor *= 10;
+		}
+
+		while (divisor > 0)
+		{
+			int digit = (result / divisor) % 10;
+			_putchar('0' + digit);
+			divisor /= 10;
+		}
+	}
+
+	_putchar('\n');
 
 	return (0);
 }
