@@ -11,25 +11,30 @@
  */
 int main(int argc, char *argv[])
 {
+	int cents, coinCount, i;
+	int coins[] = {25, 10, 5, 2, 1};
+	int numCoins = sizeof(coins) / sizeof(coins[0]);
+
+	/* Check for the correct number of arguments */
 	if (argc != 2)
 	{
 		printf("Error\n");
-		return 1;
+		return (1);
 	}
 
-	int cents = atoi(argv[1]);
+	/* Convert the input argument to an integer */
+	cents = atoi(argv[1]);
 
+	/* Handle negative input */
 	if (cents < 0)
 	{
 		printf("0\n");
-		return 0;
+		return (0);
 	}
 
-	int coins[] = {25, 10, 5, 2, 1};
-	int numCoins = sizeof(coins) / sizeof(coins[0]);
-	int coinCount = 0;
-
-	for (int i = 0; i < numCoins; i++)
+	/* Calculate the minimum number of coins needed */
+	coinCount = 0;
+	for (i = 0; i < numCoins; i++)
 	{
 		while (cents >= coins[i])
 		{
@@ -38,7 +43,8 @@ int main(int argc, char *argv[])
 		}
 	}
 
+	/* Print the minimum number of coins needed */
 	printf("%d\n", coinCount);
 
-	return 0;
+	return (0);
 }
