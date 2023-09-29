@@ -37,7 +37,7 @@ bool is_positive_number(const char *str)
 	while (*str)
 	{
 		if (*str < '0' || *str > '9')
-			return false;
+			return (false);
 		str++;
 	}
 	return (true);
@@ -52,9 +52,7 @@ bool is_positive_number(const char *str)
  */
 int main(int argc, char *argv[])
 {
-	int result = 0;
-	int divisor;
-	int i;
+	int result = 0, divisor, i;
 
 	if (argc == 1)
 	{
@@ -68,32 +66,30 @@ int main(int argc, char *argv[])
 			if (!is_positive_number(argv[i]))
 			{
 				char *error_message = "Error\n";
+
 				while (*error_message)
 				{
 					_putchar(*error_message);
 					error_message++;
 				}
-				return 1;
+				return (1);
 			}
 
 			result += _atoi(argv[i]);
 		}
-
 		divisor = 1;
 		while (divisor <= result / 10)
 		{
 			divisor *= 10;
 		}
-
 		while (divisor > 0)
 		{
 			int digit = (result / divisor) % 10;
+
 			_putchar('0' + digit);
 			divisor /= 10;
 		}
-
 		_putchar('\n');
 	}
-
 	return (0);
 }
