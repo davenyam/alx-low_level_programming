@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
 		int digit;
 		while (count > 0)
 		{
-			digit = count % 10;
+			digit = (count % 10) - 1;
 			_putchar('0' + digit);
 			count /= 10;
 		}
