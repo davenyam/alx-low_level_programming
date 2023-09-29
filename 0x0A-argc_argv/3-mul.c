@@ -9,7 +9,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int num1 = _atoi(argv[1]), num2 = _atoi(argv[2]), result, divisor = 1, digit;
+	int num1, num2, result, divisor, digit;
 
 	if (argc != 3)
 	{
@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
 		_putchar('\n');
 		return (1);
 	}
-
+	num1 = _atoi(argv[1]), num2 = _atoi(argv[2]);
 	result = num1 * num2;
 	if (result < 0)
 	{
@@ -35,6 +35,7 @@ int main(int argc, char *argv[])
 	}
 	else
 	{
+		divisor = 1;
 		while (divisor <= result / 10)
 		{
 			divisor *= 10;
