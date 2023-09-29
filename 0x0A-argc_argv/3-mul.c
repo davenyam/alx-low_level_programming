@@ -28,20 +28,18 @@ int main(int argc, char *argv[])
 		_putchar('-');
 		result = -result;
 	}
-
-	if (result == 0)
-	{
-		_putchar('0');
-	}
 	else
 	{
-		divisor = 1;
+		int divisor = 1;
+
 		while (divisor <= result / 10)
 		{
 			divisor *= 10;
 		}
 		while (divisor > 0)
 		{
+			int digit;
+
 			digit = (result / divisor) % 10;
 			_putchar('0' + digit);
 			divisor /= 10;
