@@ -21,15 +21,17 @@ int main(int argc, char *argv[])
 		_putchar('\n');
 		return (1);
 	}
+
 	num1 = _atoi(argv[1]);
 	num2 = _atoi(argv[2]);
 	result = num1 * num2;
+
 	if (result < 0)
 	{
 		_putchar('-');
 		result = -result;
 	}
-	else
+	if (result == 0)
 	{
 		int divisor = 1;
 
@@ -39,9 +41,8 @@ int main(int argc, char *argv[])
 		}
 		while (divisor > 0)
 		{
-			int digit;
+			int digit = (result / divisor) % 10;
 
-			digit = (result / divisor) % 10;
 			_putchar('0' + digit);
 			divisor /= 10;
 		}
