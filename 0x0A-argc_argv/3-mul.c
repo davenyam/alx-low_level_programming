@@ -44,9 +44,12 @@ int main(int argc, char *argv[])
 		_putchar('\n');
 		return (1);
 	}
-	int num1 = _atoi(argv[1]), num2 = _atoi(argv[2]), result;
+	int num1, num2, result;
 
+	num1 = _atoi(argv[1]);
+	num2 = _atoi(argv[2]);
 	result = num1 * num2;
+
 	if (result < 0)
 	{
 		_putchar('-');
