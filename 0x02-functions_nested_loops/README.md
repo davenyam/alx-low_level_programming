@@ -41,13 +41,13 @@ This repository contains a collection of C programs that perform various tasks r
 
 
 ## **3-islower.c**:
-**Prototype**: _int _islower(int c)_
+**Prototype**: _int_ _islower(int c)_
 
 **Description**: This C program defines a function named _islower with the specified prototype, which checks if a given character is lowercase or not. The function takes an integer argument c and returns 1 if c is a lowercase character or 0 if it is not. This function provides a simple yet essential utility for character classification in C programming, enabling users to determine whether a character is in lowercase or not by utilizing the returned integer value. It serves as a custom implementation of the character classification functionality, offering a valuable alternative to the standard library function islower for character case validation.
 
 
 ## **4-isalpha.c**:
-**Prototype**: _int _isalpha(int c)_
+**Prototype**: _int_ _isalpha(int c)_
 
 **Description**: This C program defines a function named _isalpha with the specified prototype, which checks if a given character is an alphabetic character (letter), whether it's in lowercase or uppercase. The function takes an integer argument c and returns 1 if c is a letter and 0 if it is not. This function provides a useful utility for character classification in C programming, allowing users to determine whether a character is an alphabetic letter or not, regardless of its case, by using the returned integer value. It serves as a custom implementation of the character classification functionality and offers an alternative to the standard library function isalpha for alphabetic character validation.
 
@@ -59,7 +59,7 @@ This repository contains a collection of C programs that perform various tasks r
 
 
 ## **6-abs.c**:
-**Prototype**: _int _abs(int)_
+**Prototype**: _int_ _abs(int)_
 
 **Description**: This C program defines a function named _abs with the specified prototype, which calculates and returns the absolute value of an integer passed as an argument. The function effectively handles integer input and returns its absolute value, making it a valuable utility for obtaining the magnitude of a number in C programming. While providing similar functionality to the standard library function abs, this custom implementation offers an alternative for users who prefer or require a specific implementation of absolute value calculation.
 
