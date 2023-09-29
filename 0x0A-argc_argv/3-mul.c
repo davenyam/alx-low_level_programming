@@ -34,6 +34,8 @@ int _atoi(char *s)
  */
 int main(int argc, char *argv[])
 {
+	int num1, num2, result;
+
 	if (argc != 3)
 	{
 		_putchar('E');
@@ -44,13 +46,12 @@ int main(int argc, char *argv[])
 		_putchar('\n');
 		return (1);
 	}
-	
-	int num1, num2, result;
 
 	num1 = _atoi(argv[1]);
 	num2 = _atoi(argv[2]);
 	result = num1 * num2;
 
+	/* Handle negative result */
 	if (result < 0)
 	{
 		_putchar('-');
@@ -63,8 +64,8 @@ int main(int argc, char *argv[])
 	}
 	else
 	{
+		/* Calculate and print digits one by one */
 		int divisor = 1;
-
 		while (divisor <= result / 10)
 		{
 			divisor *= 10;
@@ -73,11 +74,12 @@ int main(int argc, char *argv[])
 		while (divisor > 0)
 		{
 			int digit = (result / divisor) % 10;
-
 			_putchar('0' + digit);
 			divisor /= 10;
 		}
 	}
+
 	_putchar('\n');
+
 	return (0);
 }
