@@ -10,13 +10,13 @@
  */
 bool is_positive_number(const char *str)
 {
-    while (*str)
-    {
-        if (*str < '0' || *str > '9')
-            return false;
-        str++;
-    }
-    return true;
+	while (*str)
+	{
+		if (*str < '0' || *str > '9')
+			return false;
+		str++;
+	}
+	return (true);
 }
 
 /**
@@ -28,48 +28,48 @@ bool is_positive_number(const char *str)
  */
 int main(int argc, char *argv[])
 {
-    int result = 0;
-    int divisor;
-    int i;
+	int result = 0;
+	int divisor;
+	int i;
 
-    if (argc == 1)
-    {
-        putchar('0');
-        putchar('\n');
-    }
-    else
-    {
-        for (i = 1; i < argc; i++)
-        {
-            if (!is_positive_number(argv[i]))
-            {
-                char *error_message = "Error\n";
-                while (*error_message)
-                {
-                    putchar(*error_message);
-                    error_message++;
-                }
-                return 1;
-            }
+	if (argc == 1)
+	{
+		putchar('0');
+		putchar('\n');
+	}
+	else
+	{
+		for (i = 1; i < argc; i++)
+		{
+			if (!is_positive_number(argv[i]))
+			{
+				char *error_message = "Error\n";
+				while (*error_message)
+				{
+					putchar(*error_message);
+					error_message++;
+				}
+				return 1;
+			}
 
-            result += atoi(argv[i]);
-        }
+			result += atoi(argv[i]);
+		}
 
-        divisor = 1;
-        while (divisor <= result / 10)
-        {
-            divisor *= 10;
-        }
+		divisor = 1;
+		while (divisor <= result / 10)
+		{
+			divisor *= 10;
+		}
 
-        while (divisor > 0)
-        {
-            int digit = (result / divisor) % 10;
-            putchar('0' + digit);
-            divisor /= 10;
-        }
+		while (divisor > 0)
+		{
+			int digit = (result / divisor) % 10;
+			putchar('0' + digit);
+			divisor /= 10;
+		}
 
-        putchar('\n');
-    }
+		putchar('\n');
+	}
 
-    return 0;
+	return (0);
 }
