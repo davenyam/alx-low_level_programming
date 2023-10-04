@@ -3,7 +3,8 @@
 #ifndef NULL
 #define NULL ((void *)0)
 #endif
-/*
+
+/**
  * create_array - Creates an array of characters and initializes.
  * @size: The size of the array to create.
  * @c: The character to initialize the array with.
