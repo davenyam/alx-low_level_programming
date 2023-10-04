@@ -32,7 +32,7 @@ int word_len(char *str)
  * count_words - Count the number of words in a string.
  * @str: The input string.
  *
- * This function counts and returns the number of words in the input string @str.
+ * This function counts and returns number of words in the input string.
  * Words are separated by spaces.
  *
  * Return: The number of words in @str.
