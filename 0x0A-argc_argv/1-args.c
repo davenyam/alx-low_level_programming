@@ -10,12 +10,14 @@
 int main(int argc, char *argv[])
 {
 	int count;
+
 	(void)argv;
 
 	count = argc;
 	if (count >= 0)
 	{
 		int digit;
+
 		while (count > 0)
 		{
 			digit = (count % 10) - 1;
@@ -24,6 +26,5 @@ int main(int argc, char *argv[])
 		}
 		_putchar('\n');
 	}
-
 	return (0);
 }
