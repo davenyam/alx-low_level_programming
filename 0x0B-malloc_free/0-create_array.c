@@ -4,16 +4,16 @@
 #define NULL ((void *)0)
 #endif
 /*
- * create_array - Creates an array of characters and initializes it with a specific character.
+ * create_array - Creates an array of characters and initializes.
  * @size: The size of the array to create.
  * @c: The character to initialize the array with.
  *
- * Return: A pointer to the created and initialized array or NULL if size is 0 or if memory allocation fails.
+ * Return: A pointer to the created and initialized array or NULL if size is 0.
  */
 
 char *create_array(unsigned int size, char c)
 {
-	char* x;
+	char *x;
 	unsigned int i;
 
 	if (size == 0)
