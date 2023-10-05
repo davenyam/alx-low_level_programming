@@ -14,7 +14,7 @@ void *malloc_checked(unsigned int b)
     if (i == NULL)
     {
         perror("Memory allocation failed");
-        exit(EXIT_FAILURE);
+        exit(98);
     }
 
     return i;
