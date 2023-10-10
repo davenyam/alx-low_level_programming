@@ -5,11 +5,7 @@
  * _copy - Copies a string to a new dynamically allocated memory.
  * @src: Source string to copy.
  *
- * Return: A pointer to the new copy of the string, or NULL if memory allocation fails.
- *
- * Description: This function copies the content of the source string @src to a new
- * dynamically allocated memory. It is the responsibility of the caller to free
- * the memory allocated by this function.
+ * Return: A pointer to the new copy of the string, or NULL.
  */
 char *_copy(char *src)
 {
@@ -46,12 +42,7 @@ char *_copy(char *src)
  * @age: Age of the new dog.
  * @owner: Owner of the new dog.
  *
- * Return: A pointer to the newly created dog structure, or NULL if memory allocation fails.
- *
- * Description: This function creates a new dog structure, initializes its fields with
- * the provided @name, @age, and @owner, and returns a pointer to the new structure. If
- * any memory allocation fails, it returns NULL. The caller is responsible for freeing
- * the memory allocated by this function.
+ * Return: A pointer to the newly created dog structure, or NULL.
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
