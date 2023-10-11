@@ -8,6 +8,7 @@
  *
  * Return: The index of the first integer that matches the comparison func.
  */
+
 int int_index(int *array, int size, int (*cmp)(int))
 {
 	int i;
