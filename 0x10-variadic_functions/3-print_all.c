@@ -7,7 +7,7 @@
 void print_all(const char *const format, ...)
 {
 	va_list k;
-	unsigned int i = 0, j, c = 0;
+	unsigned int i = 0, j=0, c = 0;
 	char *l;
 	const char m[] = "cifs";
 
@@ -15,8 +15,6 @@ void print_all(const char *const format, ...)
 
 	while (format && format[i])
 	{
-		j = 0;
-
 		while (m[j])
 		{
 			if (format[i] == m[j] && c)
@@ -26,7 +24,6 @@ void print_all(const char *const format, ...)
 			}
 			j++;
 		}
-
 		switch (format[i])
 		{
 		case 'c':
@@ -40,19 +37,15 @@ void print_all(const char *const format, ...)
 			break;
 		case 's':
 			l = va_arg(k, char *), c = 1;
-
 			if (!l)
 			{
 				printf("(nil)");
 				break;
 			}
-
 			printf("%s", l);
 			break;
 		}
 		i++;
 	}
-
-	printf("\n");
-	va_end(k);
+	printf("\n"), va_end(k);
 }
