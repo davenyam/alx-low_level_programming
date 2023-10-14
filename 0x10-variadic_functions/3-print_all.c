@@ -3,10 +3,6 @@
 /**
  * print_all - Prints values of various types based on the format string.
  * @format: A string containing format specifiers.
- *
- * Description: This function accepts a format string and a variable number of
- * arguments of different types (char, int, double, or string) and prints the
- * values based on the format specifiers.
  */
 void print_all(const char *const format, ...)
 {
