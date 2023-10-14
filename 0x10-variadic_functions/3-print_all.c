@@ -8,7 +8,7 @@
  * arguments of different types (char, int, double, or string) and prints the
  * values based on the format specifiers.
  */
-void print_all(const char * const format, ...)
+void print_all(const char *const format, ...)
 {
 	va_list k;
 	unsigned int i = 0, j, c = 0;
@@ -25,7 +25,8 @@ void print_all(const char * const format, ...)
 			{
 				printf(", ");
 				break;
-			} j++;
+			}
+			j++;
 		}
 		switch (format[i])
 		{
@@ -47,7 +48,9 @@ void print_all(const char * const format, ...)
 			}
 			printf("%s", l);
 			break;
-		} i++;
+		}
+		i++;
 	}
+
 	printf("\n"), va_end(k);
 }
