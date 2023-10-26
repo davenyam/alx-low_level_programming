@@ -7,7 +7,7 @@
 void print_all(const char *const format, ...)
 {
 	va_list k;
-	unsigned int i = 0, j = 0, c = 0;
+	unsigned int i = 0, j, c = 0;
 	char *l;
 	const char m[] = "cifs";
 
@@ -15,13 +15,16 @@ void print_all(const char *const format, ...)
 
 	while (format && format[i])
 	{
+		j = 0;
+		
 		while (m[j])
 		{
 			if (format[i] == m[j] && c)
 			{
 				printf(", ");
 				break;
-			} j++;
+			}
+			j++;
 		}
 		switch (format[i])
 		{
@@ -43,7 +46,9 @@ void print_all(const char *const format, ...)
 			}
 			printf("%s", l);
 			break;
-		} i++;
+		}
+		i++;
 	}
-	printf("\n"), va_end(k);
+	printf("\n");
+	va_end(k);
 }
