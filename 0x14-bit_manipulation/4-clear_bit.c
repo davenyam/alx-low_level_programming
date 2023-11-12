@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * clear_bit - Clears the value of a bit at a specific index in an unsigned long integer.
+ * clear_bit - Clears value of a bit at a specific index.
  * @n: A pointer to the unsigned long integer to modify.
  * @index: The index of the bit to clear (0-based).
  *
